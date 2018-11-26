@@ -8,7 +8,7 @@ function mirror_error {
 TARBALL=pnda.tar.gz
 
 rm -rf $TARBALL pnda
-curl -LsS -o $TARBALL $PNDA_REPO/archive/$PNDA_BRANCH.tar.gz
+curl -LsS -o /home/${OS_USER}/$TARBALL $PNDA_REPO/archive/$PNDA_BRANCH.tar.gz
 [[ $? -ne 0 ]] && mirror_error "Problem while getting $PNDA_REPO/archive/$PNDA_BRANCH.tar.gz"
 
 mkdir pnda
