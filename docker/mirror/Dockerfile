@@ -1,16 +1,17 @@
-FROM centos:7.5.1804 as build
+#FROM centos:7.5.1804 as build
+FROM saltstack/centos-7-minimal as build
 
-ARG PNDARELEASE=develop
+ARG PNDARELEASE=2.0
 # Can be HDP or CDH
 ARG HADOOPDIST=HDP
 
 RUN yum clean all && rm -rf /var/cache/yum/* && yum install gettext git -y
 
-RUN git clone -b $PNDARELEASE https://github.com/pndaproject/pnda.git
+RUN git clone -b $PNDARELEASE https://github.com/cprecup/pnda.git
 
 WORKDIR /pnda/mirror
 # Add the -r flag to mirror rpm packages
-RUN ./create_mirror.sh -d $HADOOPDIST
+RUN ./create_mirror.sh -d $HADOOPDIST -r
 
 WORKDIR /pnda/build
 RUN ./install-build-tools.sh

@@ -34,6 +34,8 @@ httpd
 httpd-tools
 krb5-devel
 libffi-devel
+libglvnd-1.0.1-0.8.git5baa1e5.el7
+libglvnd-egl-1.0.1-0.8.git5baa1e5.el7
 libgsasl-devel
 libtirpc-devel
 libxml2-python
