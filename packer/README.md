@@ -22,8 +22,8 @@ For the mirror image, you will require these parameters:
 
 ```json
 ...
-    "username": "centos",
-    "password": "centos",
+    "username": "root",
+    "password": "root",
     "pnda_repo": "https://github.com/pndaproject/pnda",
     "pnda_branch": "develop",
     "build_mode": "BRANCH",

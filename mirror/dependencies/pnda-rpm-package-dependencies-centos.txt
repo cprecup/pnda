@@ -34,6 +34,8 @@ httpd
 httpd-tools
 krb5-devel
 libffi-devel
+libglvnd-1.0.1-0.8.git5baa1e5.el7
+libglvnd-egl-1.0.1-0.8.git5baa1e5.el7
 libgsasl-devel
 libtirpc-devel
 libxml2-python
@@ -63,7 +65,7 @@ python2-pip
 python34-devel
 python34-pip
 redhat-lsb
-redis
+redis-3.2.12-2.el7
 ruby-devel
 salt-master-2015.8.11-1.el7
 salt-minion-2015.8.11-1.el7

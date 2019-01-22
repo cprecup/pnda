@@ -499,17 +499,16 @@ And last but not least, we'd like to thank the maintainers and contributors (in 
 - Siddaram Sonar
 - AbhilashS-MapleLabS
 - shubhi0310
-- dharaneeshwaran
 - Arvind Purohith
 - Janarthanan Selvaraj
 - deepamartin
 - Hitesh Tiwari
 - Piyush Pote
-- Janarthanan.Selvaraj
 - Pavan Sudheendra
 - Siddaram M Sonar
 - sreekanthmaplelabs
 - sushantpande
-- krickwix
+- Fabien Andrieux
 - SivaMaplelabs
 - Mike Mester
+- Will
