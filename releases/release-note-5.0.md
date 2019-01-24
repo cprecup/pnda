@@ -479,14 +479,19 @@ And last but not least, we'd like to thank the maintainers and contributors (in 
 - stephanesan
 - Xiaoyu Chen
 
+- piyushpote1
 - Manasa
-- Dharaneeshwaran Ravichandran
+- dharaneeshvrd
+- Dharaneeshwaran.R
 - chandan pal
 - cloudwise
 - Donald Hunter
 - siddaramm
 - Julien Barbot
+- AbhilashS-MapleLabs
+- Dharaneeshwaran
 - mrunmayeejog
+- Janarthanan selvaraj
 - GaneshManal
 - chandanpal
 - Boopalan S
@@ -506,5 +511,4 @@ And last but not least, we'd like to thank the maintainers and contributors (in 
 - Fabien Andrieux
 - SivaMaplelabs
 - Mike Mester
-
 - Will
