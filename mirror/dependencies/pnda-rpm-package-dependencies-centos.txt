@@ -42,6 +42,7 @@ libxml2-python
 libxml2-devel
 libxslt-devel
 mailcap
+mesa-libEGL-17.2.3-8.20171019.el7
 mysql-community-server
 mysql-community-client
 nginx

@@ -1,5 +1,6 @@
 #FROM centos:7.5.1804 as build
 FROM saltstack/centos-7-minimal as build
+
 ARG PNDARELEASE=develop
 # Can be HDP or CDH
 ARG HADOOPDIST=HDP
