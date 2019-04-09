@@ -1,0 +1,14 @@
+
+mirror/mirror-dist/mirror_rpm/libacl-2.2.51-14.el7.x86_64.rpm
+*.rpm
+mirror/mirror-dist/mirror_rpm/RPM-GPG-KEY-CentOS-7
+mirror/mirror-dist/mirror_rpm/RPM-GPG-KEY-cloudera
+mirror/mirror-dist/mirror_rpm/RPM-GPG-KEY-EPEL-7
+mirror/mirror-dist/mirror_rpm/RPM-GPG-KEY-Jenkins
+mirror/mirror-dist/mirror_rpm/RPM-GPG-KEY-mysql
+mirror/mirror-dist/mirror_rpm/SALTSTACK-GPG-KEY.pub
+mirror/yum-python-deps.log
+build/apache-maven-3.0.5-bin.tar.gz
+build/get-pip.py
+build/mvn-private-m2.sh
+build/yum-build-deps.log

@@ -22,8 +22,8 @@ For the mirror image, you will require these parameters:
 
 ```json
 ...
-    "username": "root",
-    "password": "root",
+    "username": "centos",
+    "password": "centos",
     "pnda_repo": "https://github.com/pndaproject/pnda",
     "pnda_branch": "develop",
     "build_mode": "BRANCH",
@@ -88,7 +88,7 @@ Then append the range we want to open to the end of the file:
 </service>
 ```
 
-Finally, restore the permissions and reload the firewall:
+Restore the permissions and reload the firewall:
 ```sh
 chmod 444 /etc/vmware/firewall/service.xml
 esxcli network firewall refresh
@@ -109,6 +109,35 @@ Then, on the packer configuration file, you will need to fill:
     "vsphere_datastore": "XXX",
 ...
 ```
+
+Confirm as per the configuration file for your build mode `vmware/<build_mode>/centos_base.json` that your virtual NIC is _e1000_:
+```json
+...
+          "ethernet0.virtualDev": "e1000",
+...
+```
+
+If the virtual NIC is of a different type, e.g., _vmxnet_, change this in `vmware/<build_mode>/centos_base.json`:
+```json
+...
+          "ethernet0.virtualDev": "vmxnet3",
+...
+```
+
+Finally, check if the guest OS type exists for your ESXi. The default type configured in `vmware/<build_mode>/centos_base.json` is:
+```json
+...
+        "guest_os_type": "centos7-64",
+...
+```
+
+This may have to be customized to:
+```json
+...
+        "guest_os_type": "centos-64",
+...
+```
+
 
 #### local setup
 
@@ -134,6 +163,20 @@ Then, on the packer configuration file, you will need to fill:
     "vsphere_password": "XXXX",
     "vsphere_portgroup": "XXX",
     "vsphere_datastore": "XXX",
+...
+```
+
+Confirm as per the configuration file for your build mode `vmware/<build_mode>/centos_base.json` that your virtual NIC is _e1000_:
+```json
+...
+          "ethernet0.virtualDev": "e1000",
+...
+```
+
+If the virtual NIC is of a different type, e.g., _vmxnet_, change this in `vmware/<build_mode>/centos_base.json`:
+```json
+...
+          "ethernet0.virtualDev": "vmxnet3",
 ...
 ```
 
